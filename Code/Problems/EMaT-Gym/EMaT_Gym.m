@@ -60,8 +60,8 @@ methods
     end
 
     function setTasks(Prob)
-        if count(py.sys.path, 'Problems/Test/EMaT-Gym') == 0
-            py.sys.path().append('Problems/Test/EMaT-Gym');
+        if count(py.sys.path, 'Problems/EMaT-Gym') == 0
+            py.sys.path().append('Problems/EMaT-Gym');
         end
         py.importlib.import_module('gym_runner');
         py.gym_runner.reset_global_normalizer();

@@ -16,7 +16,7 @@ This repository contains the implementation of **MES-RET** and **sep-MES-RET (sM
 > ⚠️ **Important:** All code in this repository is designed to run **within the [MTO-Platform (MToP)](https://github.com/intLyc/MTO-Platform)**.
 
 Please **clone or download the MToP** and place corresponding files inside the `Algorithms/` and `Problems/` directories. More baselines can be found in MToP.
-1
+
 ## For Policy Search Tasks
 
 The policy search environments involve **Python-MATLAB hybrid programming** using **MATLAB's Python interface**. To run these tasks:

@@ -1,7 +1,9 @@
 # Supplementary files
 
-This repository contains supplementary files for the paper "Breaking Multi-Task Curse: Reward-Weighted Evolution for Black-Box Many-Task Optimization".
+This repository contains supplementary files for the paper:
 
-Rendered GIFs click [here](./Rendered-GIFs/Rendered-GIFs.md).
+> Breaking Multi-Task Curse: Reward-Weighted Evolution for Black-Box Many-Task Optimization
 
-Source code click [here](./Source-Code/Readme.md).
+Rendered GIFs [click here](./Rendered-GIFs/Rendered-GIFs.md).
+
+Source code [click here](./Source-Code/Readme.md).

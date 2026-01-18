@@ -1,5 +1,0 @@
-# Requirements for gym environment
-numpy
-swig
-gymnasium[box2d,mujoco]
-scipy

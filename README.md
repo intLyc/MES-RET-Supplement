@@ -1,12 +1,31 @@
-# Supplementary files
+# Breaking Multi-Task Curse: Reward-Weighted Evolution for Black-Box Many-Task Optimization
 
-This repository contains supplementary files for the paper:
+**Email: <int_lyc@cug.edu.cn>**
 
-> Breaking Multi-Task Curse: Reward-Weighted Evolution for Black-Box Many-Task Optimization
+## Reference
+
+```
+@InProceedings{Li2026MES-RET,
+  author    = {Li, Yanchi and Liu, Jiao and Gong, Wenyin and Gu, Qiong and Zhao, Yue and Ong, Yew-Soon},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  title     = {Breaking Multi-Task Curse: Reward-Weighted Evolution for Black-Box Many-Task Optimization},
+  year      = {2026},
+}
+```
+
+## Note
+
+The MTO-Platform (MToP) has incorporated the relevant algorithm and problems at:
+
+[MES-RET Algorithm](https://github.com/intLyc/MTO-Platform/tree/master/MTO/Algorithms/Multi-task/Many-task/MES-RET)
+
+[Many-task CEC Benchmark](https://github.com/intLyc/MTO-Platform/tree/master/MTO/Problems/Multi-task/Many-task%20CEC-SO)
+
+[Policy Search Task Gymnasium](https://github.com/intLyc/MTO-Platform/tree/master/MTO/Problems/Policy%20Search/MaT-Gym)
+
+MToP provides convenient utility functions. We highly recommend using it for code running. [https://github.com/intLyc/MTO-Platform](https://github.com/intLyc/MTO-Platform)
 
 Rendered GIFs [click here](./Rendered-GIFs/Rendered-GIFs.md).
-
-Source code [click here](./Source-Code/Readme.md).
 
 <div style="
   display: grid;

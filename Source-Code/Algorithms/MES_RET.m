@@ -1,6 +1,24 @@
 classdef MES_RET < Algorithm
 % <Multi-task/Many-task> <Single-objective> <None/Constrained>
 
+%------------------------------- Reference --------------------------------
+% @InProceedings{Li2026MES-RET,
+%   author    = {Li, Yanchi and Liu, Jiao and Gong, Wenyin and Gu, Qiong and Zhao, Yue and Ong, Yew-Soon},
+%   booktitle = {Forty-third International Conference on Machine Learning},
+%   title     = {Breaking Multi-Task Curse: Reward-Weighted Evolution for Black-Box Many-Task Optimization},
+%   year      = {2026},
+%   url       = {https://openreview.net/forum?id=lkGnJhXUNu},
+% }
+%--------------------------------------------------------------------------
+
+%------------------------------- Copyright --------------------------------
+% Copyright (c) Yanchi Li. You are free to use the MToP for research
+% purposes. All publications which use this platform should acknowledge
+% the use of MToP and cite as "Y. Li, W. Gong, T. Zhang, F. Ming,
+% S. Li, Q. Gu, and Y.-S. Ong, MToP: A MATLAB Benchmarking Platform for
+% Evolutionary Multitasking, 2023, arXiv:2312.08134"
+%--------------------------------------------------------------------------
+
 properties (SetAccess = public)
     sigma0 = 0.3
     tau = 1
@@ -225,7 +243,7 @@ methods
             CMA.D{t} = ones(CMA.n{t}, 1);
             CMA.C{t} = CMA.B{t} * diag(CMA.D{t}.^2) * CMA.B{t}';
             CMA.invsqrtC{t} = CMA.B{t} * diag(CMA.D{t}.^-1) * CMA.B{t}';
-            CMA.sigma{t} = Algo.sigma0 * initESSigmaScale(Prob);
+            CMA.sigma{t} = Algo.sigma0 * initESSigmaScale(Prob, t);
             CMA.eigenFE{t} = 0;
             for i = 1:CMA.lambda{t}
                 CMA.sample{t}(i) = Individual();
